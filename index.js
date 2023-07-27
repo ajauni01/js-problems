@@ -23,7 +23,7 @@ const findTotal = numbers => {
 console.log(findTotal([2, -5, 10, -3, 7]))
 
 // Task 3: Write a JavaScript program to find the most frequent element in an array and return it. 
-function findMostRepeatedNumber(arr) {
+const findMostRepeatedNumber = arr => {
   const occurrences = {};
   // Iterate through the array and count the occurrences of each number
   arr.forEach((num) => {
@@ -52,7 +52,7 @@ const mostRepeated = findMostRepeatedNumber([3, 5, 2, 5, 3, 3, 1, 4, 5]);
 console.log("The most repeated number is:", mostRepeated);
 
 // Task 5: Implement a simple JavaScript calculator. The calculator should take two numbers and an operator (+, -, *, /) as input and return the result of the operation.
-function calculate(num1, num2, operator) {
+const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -80,7 +80,7 @@ console.log("Result:", result);
 
 
 // Task 6: Create a program that generates a random password of a specified length. The password should include a mix of uppercase letters, lowercase letters, numbers, and special characters.
-function generateRandomPassword(length) {
+const generateRandomPassword = length => {
   const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
   const numberChars = '0123456789';
@@ -106,7 +106,7 @@ console.log("Random Password:", randomPassword);
 
 // Task 7: Implement a function that converts a Roman numeral to an integer. The function should take a Roman numeral string (e.g., "IX" or "XXI") as input and return the corresponding integer value.
 
-function romanToInteger(romanNumeral) {
+const romanToInteger = romanNumeral => {
   const romanNumerals = {
     'I': 1,
     'V': 5,
@@ -140,7 +140,7 @@ console.log(romanToInteger(romanNumeral1)); // Output: 9
 console.log(romanToInteger(romanNumeral2)); // Output: 21
 
 // Task 8: Implement a JavaScript function to find the second smallest element in an array of numbers. The function should return the second smallest number.
-function findSecondSmallest(arr) {
+const findSecondSmallest = arr => {
   if (arr.length < 2) {
     return "Error: The array must contain at least two elements.";
   }
