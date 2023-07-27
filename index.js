@@ -1,26 +1,26 @@
 // Task 1 : Create a function that takes a string as input and returns the reversed version of the string without using the built-in reverse() method.
 
-// const strReverse = str => {
-//   let reversedStr = ''
-//   for (let i = str.length - 1; i >= 0; --i) {
-//     reversedStr += str[i]
-//   }
-//   return reversedStr;
-// }
-// console.log(strReverse('hello world'))
+const strReverse = str => {
+  let reversedStr = ''
+  for (let i = str.length - 1; i >= 0; --i) {
+    reversedStr += str[i]
+  }
+  return reversedStr;
+}
+console.log(strReverse('hello world'))
 
 
 // Task 2 : Create a function that takes an array of numbers as input and returns the sum of all positive numbers in the array.
-// const findTotal = numbers => {
-//   let sum = 0;
-//   for (let i = 0; i < numbers.length; ++i) {
-//     if (numbers[i] > 0) {
-//       sum += numbers[i]
-//     }
-//   }
-//   return sum;
-// }
-// console.log(findTotal([2, -5, 10, -3, 7]))
+const findTotal = numbers => {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; ++i) {
+    if (numbers[i] > 0) {
+      sum += numbers[i]
+    }
+  }
+  return sum;
+}
+console.log(findTotal([2, -5, 10, -3, 7]))
 
 // Task 3: Write a JavaScript program to find the most frequent element in an array and return it. 
 function findMostRepeatedNumber(arr) {
